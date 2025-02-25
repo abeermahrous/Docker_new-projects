@@ -1,0 +1,26 @@
+Notes :
+==================
+pwd 
+mkdir website
+ls
+cd /home/ubuntu/website
+vim index.html 
+<!doctype html >
+< html lang="eng"> 
+<head> 
+ <menta charset = "utf-8" >
+ <title> Home page </title>
+</head>
+<body>
+<h1> hello from docker </h1>
+</body>
+</html>
+=======================================
+
+docker run -it -d --name <name of contaner > -p <port number> -v Folder_path:path of html inside container .
+
+docker run -it -d --name html -p 8080:80 -v /home/ubuntu/website:/usr/share/nginx/html 
+docker ps 
+
+
+
